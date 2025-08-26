@@ -7,5 +7,7 @@
     align-content: center;
     display: flex;
     flex-direction: column;
+    text-align: center;
+    margin:20px 10px 10px;
   }
 }
