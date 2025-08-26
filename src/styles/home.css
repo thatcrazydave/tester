@@ -12,5 +12,9 @@
   }
 }
 @media (max-width:1024px){
-  
+
+}
+.content{
+  text-align: center;
+  margin: 20px 80px 45px;
 }
