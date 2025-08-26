@@ -3,7 +3,7 @@ ul{
   list-style: none;
   gap: 20px;
   padding: 0;
-
+  text-decoration: none;
   justify-content: right;
   align-items: center;  
 }
@@ -13,4 +13,8 @@ nav{
   justify-content: space-between;
   margin: 0 10px 0;
   margin-bottom: -20px;
+}
+link{
+  text-decoration: none;
+  color: black;
 }
