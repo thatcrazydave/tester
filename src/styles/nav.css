@@ -12,4 +12,5 @@ nav{
   flex-direction: row;
   justify-content: space-between;
   margin: 0 10px 0;
+  margin-bottom: -20px;
 }
