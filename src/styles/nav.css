@@ -1,0 +1,15 @@
+ul{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  padding: 0;
+
+  justify-content: right;
+  align-items: center;  
+}
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 10px 0;
+}
