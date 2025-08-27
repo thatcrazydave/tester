@@ -1,15 +1,32 @@
 import './styles/nav.css';
 import { Link } from 'react-router-dom';
-function Nav(){
-  return(
+import { useState } from 'react';
+
+function Nav() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
     <nav>
-      <p><Link to="/">Verya</Link></p>
-      <ul>
-      <li><Link to="/about">About</Link></li>
-        <li><Link to="/Contact">Contact</Link></li>
-        <li><Link to="/Signup">SignUp</Link></li>
+      <p className="logo"><Link to="/">Verya</Link></p>
+
+      {/* Hamburger Icon */}
+      <div 
+        className={`hamburger ${isOpen ? 'active' : ''}`} 
+        onClick={() => setIsOpen(!isOpen)}
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      {/* Fullscreen Menu */}
+      <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
+        <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
+        <li><Link to="/Contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
+        <li><Link to="/Signup" onClick={() => setIsOpen(false)}>SignUp</Link></li>
       </ul>
     </nav>
   );
 }
+
 export default Nav;
