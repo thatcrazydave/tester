@@ -21,9 +21,9 @@ function Nav() {
 
       {/* Fullscreen Menu */}
       <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-        <li><Link to="/about" onClick={() => setIsOpen(false)}>About</Link></li>
-        <li><Link to="/Contact" onClick={() => setIsOpen(false)}>Contact</Link></li>
-        <li><Link to="/Signup" onClick={() => setIsOpen(false)}>SignUp</Link></li>
+        <li><Link to="/learn" onClick={() => setIsOpen(false)}>Learn</Link></li>
+        <li><Link to="/AdminUpload" onClick={() => setIsOpen(false)}>Admin</Link></li>
+        <li><Link to="/Signup" onClick={() => setIsOpen(false)}>Practice</Link></li>
       </ul>
     </nav>
   );

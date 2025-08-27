@@ -1,0 +1,104 @@
+/* Container */
+.learning-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.learning-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Topic Selection */
+.topic-selection {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.topic-selection label {
+  font-weight: 500;
+  margin-right: 5px;
+}
+
+.topic-selection select,
+.topic-selection input[type="number"] {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.topic-selection button {
+  padding: 7px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.topic-selection button:hover {
+  background-color: #0056b3;
+}
+
+/* Messages */
+.message {
+  margin: 10px 0;
+  font-weight: 500;
+  color: #007bff;
+}
+
+/* Questions List */
+.questions-list {
+  margin-top: 20px;
+}
+
+/* Question Card */
+.question-card {
+  background-color: white;
+  padding: 15px 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  border-left: 5px solid #007bff;
+  transition: 0.2s;
+}
+
+.question-card:hover {
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+/* Question Text */
+.question-text {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Options List */
+.options-list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.options-list li {
+  padding: 8px 12px;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.options-list li:hover {
+  background-color: #d0d7de;
+}

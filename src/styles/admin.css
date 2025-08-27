@@ -1,0 +1,70 @@
+/* Container */
+.admin-upload {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Headings */
+.admin-upload h2 {
+  text-align: center;
+  color: #1f2937;
+  margin-bottom: 20px;
+}
+
+/* Inputs */
+.admin-upload input[type="file"],
+.admin-upload input[type="text"] {
+  width: 100%;
+  margin: 10px 0 20px 0;
+  padding: 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.admin-upload input:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+/* Button */
+.admin-upload button {
+  padding: 12px 30px;
+  background-color: #3b82f6;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+}
+
+.admin-upload button:hover {
+  background-color: #2563eb;
+}
+
+/* Message */
+.admin-upload p {
+  margin-top: 15px;
+  color: #10b981; /* green for success */
+  font-weight: 500;
+}
+
+/* Error message */
+.admin-upload .error {
+  color: #ef4444; /* red for errors */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .admin-upload button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
