@@ -1,4 +1,4 @@
-/* Container */
+/* ================ CONTAINER STYLES ================ */
 .learning-container {
   max-width: 800px;
   margin: 40px auto;
@@ -9,14 +9,13 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* Header */
 .learning-container h2 {
   text-align: center;
   margin-bottom: 30px;
   color: #333;
 }
 
-/* Topic Selection */
+/* ================ TOPIC SELECTION STYLES ================ */
 .topic-selection {
   display: flex;
   flex-wrap: wrap;
@@ -52,19 +51,18 @@
   background-color: #0056b3;
 }
 
-/* Messages */
+/* ================ MESSAGES STYLES ================ */
 .message {
   margin: 10px 0;
   font-weight: 500;
   color: #007bff;
 }
 
-/* Questions List */
+/* ================ QUESTIONS STYLES ================ */
 .questions-list {
   margin-top: 20px;
 }
 
-/* Question Card */
 .question-card {
   background-color: white;
   padding: 15px 20px;
@@ -78,13 +76,12 @@
   box-shadow: 0 2px 8px rgba(0,0,0,0.15);
 }
 
-/* Question Text */
 .question-text {
   font-weight: 600;
   margin-bottom: 10px;
 }
 
-/* Options List */
+/* ================ OPTIONS STYLES ================ */
 .options-list {
   list-style-type: none;
   padding-left: 0;
@@ -101,4 +98,53 @@
 
 .options-list li:hover {
   background-color: #d0d7de;
+}
+
+/* Option Buttons */
+.option-btn {
+  padding: 10px;
+  border: none;
+  margin: 5px;
+  cursor: pointer;
+  background-color: #eee;
+  border-radius: 5px;
+  width: 100%;
+  text-align: left;
+}
+
+.option-btn:hover {
+  background-color: #ddd;
+}
+
+.option-btn.selected {
+  background-color: #ccc;
+}
+
+.option-btn.correct {
+  background-color: #4caf50;
+  color: white;
+}
+
+.option-btn.wrong {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Option States */
+.option {
+  padding: 8px;
+  border: 1px solid #ccc;
+  margin: 4px 0;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.option.correct {
+  background-color: #c8f7c5;
+  border-color: #27ae60;
+}
+
+.option.incorrect {
+  background-color: #f7c5c5;
+  border-color: #e74c3c;
 }

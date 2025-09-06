@@ -1,6 +1,7 @@
 const mongoose = require("mongoose");
 
 const questionSchema = new mongoose.Schema({
+  difficulty: { type: String, enum: ["Easy", "Medium", "Hard"], default: "Medium" }, // Difficulty level
   topic: { type: String, required: true },       // Subject or topic of the question
   questionText: { type: String, required: true },// Full text of the question
   options: [{ type: String }],                  // Optional array of possible answers
